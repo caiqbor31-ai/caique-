@@ -1,0 +1,6 @@
+{
+  "name": "sundays project",
+  "description": "sundays project // Streetwear & Casting Lab — Moda de rua com traços finos, cortes geométricos, drop archives e street casting internacional.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

@@ -1,0 +1,75 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-display: "Space Grotesk", system-ui, -apple-system, sans-serif;
+    --font-sans: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+    --font-mono: "Space Mono", monospace;
+  }
+  
+  body {
+    font-family: var(--font-sans);
+    background-color: #faf9f6;
+    color: #0f0f10;
+    letter-spacing: -0.01em;
+  }
+}
+
+.font-serif-luxury {
+  font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.035em;
+  font-weight: 500;
+}
+
+.font-display-street {
+  font-family: "Space Grotesk", system-ui, -apple-system, sans-serif;
+  letter-spacing: -0.04em;
+}
+
+.font-sans-editorial {
+  font-family: "Hanken Grotesk", system-ui, -apple-system, sans-serif;
+}
+
+.font-mono-tech {
+  font-family: "Space Mono", monospace;
+  letter-spacing: -0.02em;
+}
+
+/* Hairline borders and technical fine lines */
+.border-fine {
+  border-width: 1px;
+  border-color: rgba(15, 15, 16, 0.12);
+}
+
+.border-fine-white {
+  border-width: 1px;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+
+/* Technical crosshair marker */
+.crosshair-corner {
+  position: relative;
+}
+.crosshair-corner::before {
+  content: "+";
+  position: absolute;
+  font-family: "Space Mono", monospace;
+  font-size: 10px;
+  color: rgba(15, 15, 16, 0.4);
+  line-height: 1;
+}
+
+/* Custom minimal scrollbar */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+::-webkit-scrollbar-track {
+  background: #f4f3ef;
+}
+::-webkit-scrollbar-thumb {
+  background: #0f0f10;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #444;
+}
